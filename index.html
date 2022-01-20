@@ -5,20 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
   <title>Frontend Mentor | Clock App</title>
 </head>
 <body>
-  , it's currently
 
-  in
+  <div class="background">
 
-  More
-  Less
+    <div class="container">
+      <div class="partOne">
+          <p>“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”</p>
+          <p class="subHeading">Ada Lovelance</p>
+      </div>
 
-  Current timezone
-  Day of the year
-  Day of the week
-  Week number
+      <div class="partTwo flexxer row end">
+        <main>
+          <div class="flexxer row">
+            <img src="assets/desktop/icon-sun.svg" alt="sunIcon">
+            <p>GOOD MORNING, IT’S CURRENTLY</p>
+          </div>
+  
+          <div class="flexxer row baseline">
+            <h1 id="time">11:37</h1>
+            <p class="bst">BST</p>
+          </div>
+  
+          <h2>IN LONDON, UK</h2>
+        </main>
+        
+        <aside>
+          <div class="btn flexxer row center justCenter">
+            <button>MORE</button>
+            <div class="circle"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
 </body>
+
 </html>

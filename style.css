@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)),
+        url("assets/desktop/bg-image-daytime.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.partOne {
+    width: 573px;
+    height: 125px;
+}
+
+.partTwo {
+    width: 1110px;
+    height: 288px;
+    display: flex;
+}
+
+main { 
+    width: 50%;
+}
+
+aside {
+    width: 50%;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.subHeading {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.flexxer {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.justCenter {
+    justify-content: center;
+}
+
+.center {
+    align-items: center;
+}
+
+.end {
+    align-items: end;
+}
+
+h1 {
+    font-size: 200px;
+    color: white;
+    letter-spacing: -5px;
+}
+
+h2 {
+    font-style: 28px;
+    font-weight: bold;
+    letter-spacing: 4.8px;
+    color: white;
+}
+.bst {
+    font-size: 40px;
+    font-weight: light;
+}
+
+button { 
+    border: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: white;
+}
+
+.btn {
+    float: right;
+    width: 146px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(assets/desktop/icon-arrow-down.svg) no-repeat scroll 13px 16px, #303030;
+}
