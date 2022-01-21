@@ -65,6 +65,10 @@ img {
     flex-direction: row;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .baseline {
     align-items: baseline;
 }
@@ -88,7 +92,7 @@ h1 {
 }
 
 h2 {
-    font-style: 28px;
+    font-size: 28px;
     font-weight: bold;
     letter-spacing: 4.8px;
     color: white;
@@ -115,9 +119,77 @@ button {
     background-color: white;
 }
 
+.circle:hover, 
+.active:hover {
+    background-color: #999999;
+}
+
 .circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: url(assets/desktop/icon-arrow-down.svg) no-repeat scroll 13px 16px, #303030;
+}
+
+.active {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(assets/desktop/icon-arrow-up.svg) no-repeat scroll 0px 0px, #303030;
+}
+
+.popup {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255,255,255, 0.75);
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.popupLeft,
+.popupRight {
+    width: 40%;
+}
+
+.popupLeft {
+    height: 80%;   
+}
+
+.popupRight {
+    height: 80%;
+    border-left: 1px solid grey;
+}
+
+.popupLeft > div,
+.popupRight > div {
+    height: 100%;
+}
+
+.popupRight > div > .wrapper > p,
+.popupLeft > div > .wrapper > p,
+.popupLeft > div > .wrapper > h2,
+.popupRight > div > .wrapper > h2 {
+    color: #303030;
+}
+
+.popupRight > div > .wrapper > p, 
+.popupLeft > div > .wrapper > p {    
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.popupRight > div > .wrapper > h2, 
+.popupLeft > div > .wrapper > h2 {
+    font-size: 56px;
+    font-weight: bold;
+
+}
+
+.wrapper {
+    margin-top: 10px;
+}
+
+.popupRight > div > .wrapper {
+    margin-left: 40px;
 }
