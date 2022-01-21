@@ -166,10 +166,7 @@ button {
     height: 100%;
 }
 
-.popupRight > div > .wrapper > p,
-.popupLeft > div > .wrapper > p,
-.popupLeft > div > .wrapper > h2,
-.popupRight > div > .wrapper > h2 {
+.colorText{
     color: #303030;
 }
 
