@@ -190,3 +190,64 @@ button {
 .popupRight > div > .wrapper {
     margin-left: 40px;
 }
+
+@media only screen and (max-width: 900px) {
+    .background {
+        background: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)),
+        url("assets/tablet/bg-image-daytime.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .partTwo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        float: left;
+    }
+
+    main {
+        padding-bottom: 40px;
+    }
+
+    .background {
+        padding-bottom: 100px;
+    }
+
+    .popup {
+        bottom: -100px;
+    }
+
+    h1 {
+        font-size: 175px;
+    }
+
+    .bst {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .popupRight > div > .wrapper > p,
+    .popupLeft > div > .wrapper > p {
+        font-size: 13px;
+        letter-spacing: 2.6px;
+      }
+
+    .popupRight > div > .wrapper > h2,
+     .popupLeft > div > .wrapper > h2 {
+        font-size: 40px;
+      }
+
+      .popupRight {
+          border: none;
+      }
+
+      .popupRight > div > .wrapper {
+        margin-left: 80px;
+      }
+  }
