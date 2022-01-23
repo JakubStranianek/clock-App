@@ -191,7 +191,7 @@ button {
     margin-left: 40px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     .background {
         background: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)),
         url("assets/tablet/bg-image-daytime.jpg");
@@ -249,5 +249,102 @@ button {
 
       .popupRight > div > .wrapper {
         margin-left: 80px;
+      }
+  }
+
+
+  @media only screen and (max-width: 740px) {
+    .background {
+        background: linear-gradient( rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)),
+        url("assets/mobile/bg-image-daytime.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .partOne { 
+        width: 90%;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .subHeading {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #hello {
+        font-weight: lighter;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    .bst {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 115px;
+        height: 39px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .circle,
+    .active {
+        width: 32px;
+        height: 32px;
+    }
+
+    .circle {
+        background: url(assets/desktop/icon-arrow-down.svg) no-repeat scroll 9px 12px, #303030;
+    }
+
+    .active {
+        background: url(assets/desktop/icon-arrow-up.svg) no-repeat scroll -4px -4px, #303030;
+    }
+
+    .popup {
+        flex-direction: column;
+    }
+
+    .popupLeft, .popupRight {
+        width: 80%;
+    }
+
+    .popupRight > div > .wrapper {
+        margin-left: 0px;
+      }
+
+      .wrapper {
+          display: flex; 
+          align-items: center;
+          justify-content: space-between;
+      }
+
+    .popupRight > div > .wrapper > p,
+    .popupLeft > div > .wrapper > p {
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+
+    .popupRight > div > .wrapper > h2,
+    .popupLeft > div > .wrapper > h2 {
+        font-size: 20px;
+      }
+
+      .popupLeft > div, .popupRight > div {
+        justify-content: space-around;
       }
   }

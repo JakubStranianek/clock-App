@@ -10,8 +10,15 @@ function showTime() {
         time = hours + ":" + "0" + minutes;
     } else if (hours < 10) {
         time = "0" + hours + ":" + minutes;
-    } else if (hours >= 20 || hours <= 5) {
-        //bg.style.background = "linear-gradient(rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)), url('assets/desktop/bg-image-nighttime.jpg')";
+    } else if (hours >= 12 || hours <= 5) {
+        if (window.innerWidth < "1100" && window.innerWidth > "740") {
+            bg.style.background = "linear-gradient(rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)), url('assets/tablet/bg-image-nighttime.jpg')";    
+        } else if (window.innerWidth < "740") {
+            bg.style.background = "linear-gradient(rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)), url('assets/mobile/bg-image-nighttime.jpg')";
+        } else {
+            bg.style.background = "linear-gradient(rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0.3)), url('assets/desktop/bg-image-nighttime.jpg')";
+        }
+    
         document.querySelector("#hello").innerText = "GOOD EVENING, IT’S CURRENTLY";
         document.querySelector("#icon").src = "assets/desktop/icon-moon.svg";
         document.querySelector(".popup").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
